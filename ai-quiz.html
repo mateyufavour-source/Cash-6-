@@ -1,0 +1,44 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CASH-NET AI Quiz</title>
+  <style>
+    body{font-family:Arial,sans-serif;background:#f1f5f9;margin:0;padding:20px}
+    main{max-width:500px;margin:auto;background:white;padding:20px;border-radius:14px}
+    h1{color:#087443}
+    input,select,button{width:100%;padding:12px;margin:8px 0;box-sizing:border-box}
+    button{background:#087443;color:white;border:0;border-radius:8px}
+    #status{white-space:pre-wrap}
+  </style>
+</head>
+<body>
+<main>
+  <h1>🤖 CASH-NET AI Quiz</h1>
+  <p>Generate practice questions for your school level.</p><label>Class</label>
+<select id="level">
+<option>Form 1</option><option>Form 2</option>
+<option>Form 3</option><option>Form 4</option>
+</select>
+
+<label>Subject</label>
+<select id="subject">
+<option>Chemistry</option><option>Biology</option>
+<option>Mathematics</option><option>English</option>
+<option>Agriculture</option><option>Physics</option>
+<option>Geography</option><option>History</option>
+</select>
+
+<label>Number of questions</label>
+<select id="count">
+<option value="5">5 questions</option>
+<option value="10">10 questions</option>
+</select>
+
+<button id="generate">Generate AI Quiz</button>
+
+  <p id="status">Backend setup is required before AI generation can work.</p>
+  <div id="questions"></div>
+</main>
+</body>
+  </html>
